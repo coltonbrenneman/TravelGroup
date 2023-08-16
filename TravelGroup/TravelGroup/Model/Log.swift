@@ -8,10 +8,10 @@
 import Foundation
 
 struct Log {
-    let logDate: Date
-    let logTitle: String
-    let logAddress: String
-    let logBody: String
+    var logDate: Date
+    var logTitle: String
+    var logAddress: String
+    var logBody: String
     let uuid: UUID
 } // End of struct
 
