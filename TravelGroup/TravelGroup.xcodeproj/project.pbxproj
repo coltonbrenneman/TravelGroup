@@ -14,6 +14,8 @@
 		441F90B42A8D6285006E209E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441F90B22A8D6285006E209E /* Main.storyboard */; };
 		441F90B62A8D6286006E209E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441F90B52A8D6286006E209E /* Assets.xcassets */; };
 		441F90B92A8D6286006E209E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441F90B72A8D6286006E209E /* LaunchScreen.storyboard */; };
+		441F90C22A8D6927006E209E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90C12A8D6927006E209E /* Log.swift */; };
+		441F90C42A8D7475006E209E /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90C32A8D7475006E209E /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		441F90B52A8D6286006E209E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441F90B82A8D6286006E209E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		441F90BA2A8D6286006E209E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441F90C12A8D6927006E209E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		441F90C32A8D7475006E209E /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			children = (
 				441F90AB2A8D6285006E209E /* TravelGroup */,
 				441F90AA2A8D6285006E209E /* Products */,
+				441F90C62A8EBF29006E209E /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,12 +91,29 @@
 		441F90AB2A8D6285006E209E /* TravelGroup */ = {
 			isa = PBXGroup;
 			children = (
+				441F90C32A8D7475006E209E /* DateHelper.swift */,
+				441F90C02A8D6733006E209E /* Model */,
 				14A3EC8F2A8D6BF800E1D12C /* SupportingFiles */,
 				14A3EC8E2A8D6BEC00E1D12C /* Storyboards */,
 				14A3EC8D2A8D6BE400E1D12C /* Controllers */,
 				3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */,
 			);
 			path = TravelGroup;
+			sourceTree = "<group>";
+		};
+		441F90C02A8D6733006E209E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				441F90C12A8D6927006E209E /* Log.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		441F90C62A8EBF29006E209E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441F90C42A8D7475006E209E /* DateHelper.swift in Sources */,
+				441F90C22A8D6927006E209E /* Log.swift in Sources */,
 				441F90AD2A8D6285006E209E /* AppDelegate.swift in Sources */,
 				14A3EC912A8D6C5D00E1D12C /* LogDetailViewController.swift in Sources */,
 				3A857BF02A8D6A7D00113387 /* DiaryTableViewController.swift in Sources */,
