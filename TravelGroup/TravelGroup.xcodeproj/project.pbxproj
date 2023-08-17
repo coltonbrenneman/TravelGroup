@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14A3EC912A8D6C5D00E1D12C /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */; };
+		3A857BF02A8D6A7D00113387 /* DiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */; };
 		441F90AD2A8D6285006E209E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90AC2A8D6285006E209E /* AppDelegate.swift */; };
 		441F90AF2A8D6285006E209E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90AE2A8D6285006E209E /* SceneDelegate.swift */; };
 		441F90B42A8D6285006E209E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441F90B22A8D6285006E209E /* Main.storyboard */; };
@@ -17,7 +18,8 @@
 
 /* Begin PBXFileReference section */
 		14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
-		441F90A92A8D6285006E209E /* TravelGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewController.swift; sourceTree = "<group>"; };
+                441F90A92A8D6285006E209E /* TravelGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441F90AC2A8D6285006E209E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441F90AE2A8D6285006E209E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		441F90B32A8D6285006E209E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 				14A3EC8F2A8D6BF800E1D12C /* SupportingFiles */,
 				14A3EC8E2A8D6BEC00E1D12C /* Storyboards */,
 				14A3EC8D2A8D6BE400E1D12C /* Controllers */,
+
+				441F90AC2A8D6285006E209E /* AppDelegate.swift */,
+				441F90AE2A8D6285006E209E /* SceneDelegate.swift */,
+				441F90B22A8D6285006E209E /* Main.storyboard */,
+				3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */,
+				441F90B52A8D6286006E209E /* Assets.xcassets */,
+				441F90B72A8D6286006E209E /* LaunchScreen.storyboard */,
+				441F90BA2A8D6286006E209E /* Info.plist */,
 			);
 			path = TravelGroup;
 			sourceTree = "<group>";
@@ -164,6 +174,7 @@
 			files = (
 				441F90AD2A8D6285006E209E /* AppDelegate.swift in Sources */,
 				14A3EC912A8D6C5D00E1D12C /* LogDetailViewController.swift in Sources */,
+				3A857BF02A8D6A7D00113387 /* DiaryTableViewController.swift in Sources */,
 				441F90AF2A8D6285006E209E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
