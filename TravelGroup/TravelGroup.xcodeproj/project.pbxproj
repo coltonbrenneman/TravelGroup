@@ -76,6 +76,7 @@
 			children = (
 				441F90AB2A8D6285006E209E /* TravelGroup */,
 				441F90AA2A8D6285006E209E /* Products */,
+				441F90C62A8EBF29006E209E /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +91,7 @@
 		441F90AB2A8D6285006E209E /* TravelGroup */ = {
 			isa = PBXGroup;
 			children = (
+				441F90C32A8D7475006E209E /* DateHelper.swift */,
 				441F90C02A8D6733006E209E /* Model */,
 				14A3EC8F2A8D6BF800E1D12C /* SupportingFiles */,
 				14A3EC8E2A8D6BEC00E1D12C /* Storyboards */,
@@ -105,6 +107,13 @@
 				441F90C12A8D6927006E209E /* Log.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		441F90C62A8EBF29006E209E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
