@@ -7,13 +7,22 @@
 
 import Foundation
 
-struct Log {
-    var logDate: Date
+class Log {
+    
     var logTitle: String
     var logAddress: String
+    var logDate: Date
     var logBody: String
     let uuid: UUID
-} // End of struct
+    
+    init(logTitle: String, logAddress: String, logDate: Date = Date(), logBody: String, uuid: UUID = UUID()) {
+        self.logTitle = logTitle
+        self.logAddress = logAddress
+        self.logDate = logDate
+        self.logBody = logBody
+        self.uuid = uuid
+    }
+} //End of class
 
 extension Log: Equatable {
     static func == (lhs: Log, rhs: Log) -> Bool {

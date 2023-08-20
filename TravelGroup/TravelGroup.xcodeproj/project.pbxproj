@@ -16,6 +16,7 @@
 		441F90B92A8D6286006E209E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441F90B72A8D6286006E209E /* LaunchScreen.storyboard */; };
 		441F90C22A8D6927006E209E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90C12A8D6927006E209E /* Log.swift */; };
 		441F90C42A8D7475006E209E /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90C32A8D7475006E209E /* DateHelper.swift */; };
+		441F90C92A907D1F006E209E /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90C82A907D1F006E209E /* LogController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		441F90BA2A8D6286006E209E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		441F90C12A8D6927006E209E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		441F90C32A8D7475006E209E /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		441F90C82A907D1F006E209E /* LogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		14A3EC8D2A8D6BE400E1D12C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				441F90C72A907D0B006E209E /* ModelController */,
 				14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */,
 			);
 			path = Controllers;
@@ -114,6 +117,14 @@
 			children = (
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		441F90C72A907D0B006E209E /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				441F90C82A907D1F006E209E /* LogController.swift */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 			files = (
 				441F90C42A8D7475006E209E /* DateHelper.swift in Sources */,
 				441F90C22A8D6927006E209E /* Log.swift in Sources */,
+				441F90C92A907D1F006E209E /* LogController.swift in Sources */,
 				441F90AD2A8D6285006E209E /* AppDelegate.swift in Sources */,
 				14A3EC912A8D6C5D00E1D12C /* LogDetailViewController.swift in Sources */,
 				3A857BF02A8D6A7D00113387 /* DiaryTableViewController.swift in Sources */,
