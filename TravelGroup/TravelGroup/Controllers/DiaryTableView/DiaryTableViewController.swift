@@ -49,7 +49,7 @@ class DiaryTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailVC" {
-            if let indexPath == tableView.indexPathForSelectedRow {
+            if let indexPath = tableView.indexPathForSelectedRow {
                 if let destination = segue.destination as? LogDetailViewController {
                     let dairy = LogController.shared.logs[indexPath.row]
                     destination.log = dairy
