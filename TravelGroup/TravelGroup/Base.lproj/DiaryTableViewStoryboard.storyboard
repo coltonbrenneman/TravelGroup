@@ -39,6 +39,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="RTC-5d-uTP" kind="show" identifier="toDetailVC" id="qUn-mI-ab2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -47,12 +50,26 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Yss-2Z-toy">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lp6-bg-VEE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lp6-bg-VEE">
+                            <connections>
+                                <segue destination="RTC-5d-uTP" kind="show" id="H0x-6O-eqV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JwN-WF-i1j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-686" y="-161"/>
+        </scene>
+        <!--LogDetail-->
+        <scene sceneID="LmV-UL-Zyv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogDetail" id="RTC-5d-uTP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AQV-Cc-KlJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ee9-k2-SxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="-259"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cTS-SO-Iar">
@@ -71,6 +88,9 @@
             <point key="canvasLocation" x="-1590" y="-161"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qUn-mI-ab2"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
