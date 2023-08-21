@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FY5-4o-PhQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9If-la-idp">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(DATE)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEy-PJ-LUr">
-                                <rect key="frame" x="167" y="103" width="68" height="27"/>
+                                <rect key="frame" x="167" y="59" width="68" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="oHt-7m-MvJ"/>
                                 </constraints>
@@ -26,15 +26,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="VF5-oS-DhH">
-                                <rect key="frame" x="14" y="156.33333333333334" width="365" height="102.00000000000003"/>
+                                <rect key="frame" x="14" y="112.33333333333331" width="365" height="146"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Log Title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGe-ch-wp2">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="66"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Log Address..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dL-tm-CfC">
-                                        <rect key="frame" x="0.0" y="58" width="365" height="44"/>
+                                        <rect key="frame" x="0.0" y="80.000000000000014" width="365" height="65.999999999999986"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -68,7 +68,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ppq-F8-S8r">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mes-xc-ybC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mes-xc-ybC">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="9If-la-idp" id="UO2-sv-FZu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="logAddressTextField" destination="2dL-tm-CfC" id="6HW-zD-gNw"/>
@@ -80,24 +84,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeR-8W-aMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="646.56488549618314" y="-87.323943661971839"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5Ge-6c-xqH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FY5-4o-PhQ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e9K-yQ-9EF">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9If-la-idp" kind="relationship" relationship="rootViewController" id="mOF-sx-mKG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L4F-nS-Ql9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-280.15267175572518" y="-87.323943661971839"/>
         </scene>
     </scenes>
     <resources>
