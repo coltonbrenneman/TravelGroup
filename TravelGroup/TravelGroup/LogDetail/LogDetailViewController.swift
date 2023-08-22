@@ -48,5 +48,8 @@ class LogDetailViewController: UIViewController {
         logTitleTextField.text = log.logTitle
         logAddressTextField.text = log.logAddress
         logBodyTextView.text = log.logBody
+        
     }// UpdateUI
+
+    
 }// End of Class

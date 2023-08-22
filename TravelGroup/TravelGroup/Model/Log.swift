@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Log {
+class Log: Codable {
     
     var logTitle: String
     var logAddress: String
