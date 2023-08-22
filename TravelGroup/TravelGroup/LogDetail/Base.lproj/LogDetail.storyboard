@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9If-la-idp">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -51,14 +51,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRu-Iu-N8I">
-                                <rect key="frame" x="311" y="55.333333333333329" width="61" height="34.333333333333329"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
-                                <connections>
-                                    <action selector="saveButtonTapped:" destination="9If-la-idp" eventType="touchUpInside" id="giz-zV-BuF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="epC-8f-Sjh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -69,17 +61,18 @@
                             <constraint firstItem="wf7-2F-5pf" firstAttribute="top" secondItem="VF5-oS-DhH" secondAttribute="bottom" constant="29.670000000000002" id="MZH-rU-6Tn"/>
                             <constraint firstItem="rEy-PJ-LUr" firstAttribute="top" secondItem="epC-8f-Sjh" secondAttribute="top" id="MfK-T3-geW"/>
                             <constraint firstItem="rEy-PJ-LUr" firstAttribute="leading" secondItem="epC-8f-Sjh" secondAttribute="leading" constant="167" id="PXe-Zi-3wU"/>
-                            <constraint firstItem="epC-8f-Sjh" firstAttribute="trailing" secondItem="SRu-Iu-N8I" secondAttribute="trailing" constant="21" id="RkS-Jw-95f"/>
                             <constraint firstItem="epC-8f-Sjh" firstAttribute="trailing" secondItem="VF5-oS-DhH" secondAttribute="trailing" constant="14" id="ftS-Uc-QmP"/>
                             <constraint firstItem="VF5-oS-DhH" firstAttribute="leading" secondItem="epC-8f-Sjh" secondAttribute="leading" constant="14" id="jqC-m9-I2v"/>
                             <constraint firstItem="epC-8f-Sjh" firstAttribute="trailing" secondItem="wf7-2F-5pf" secondAttribute="trailing" constant="14" id="lCi-t9-gdZ"/>
-                            <constraint firstItem="SRu-Iu-N8I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rEy-PJ-LUr" secondAttribute="trailing" constant="8" symbolic="YES" id="qRP-Ta-xRb"/>
                             <constraint firstItem="wf7-2F-5pf" firstAttribute="leading" secondItem="epC-8f-Sjh" secondAttribute="leading" constant="14" id="uLf-jG-esq"/>
-                            <constraint firstItem="SRu-Iu-N8I" firstAttribute="centerY" secondItem="rEy-PJ-LUr" secondAttribute="centerY" id="wdL-Kz-T7d"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ppq-F8-S8r">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mes-xc-ybC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mes-xc-ybC">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="9If-la-idp" id="UO2-sv-FZu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="logAddressTextField" destination="2dL-tm-CfC" id="6HW-zD-gNw"/>
@@ -90,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeR-8W-aMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="-87"/>
+            <point key="canvasLocation" x="646.56488549618314" y="-87.323943661971839"/>
         </scene>
     </scenes>
     <resources>

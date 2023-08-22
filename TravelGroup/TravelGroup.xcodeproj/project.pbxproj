@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1402EF722A940F8B009EF808 /* LogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1402EF702A940F8B009EF808 /* LogDetail.storyboard */; };
+		1402EF752A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1402EF732A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard */; };
+		1402EF772A94105A009EF808 /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1402EF762A94105A009EF808 /* LogController.swift */; };
 		14A3EC912A8D6C5D00E1D12C /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */; };
 		3A857BF02A8D6A7D00113387 /* DiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */; };
 		441F90AD2A8D6285006E209E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90AC2A8D6285006E209E /* AppDelegate.swift */; };
@@ -16,13 +19,15 @@
 		441F90B92A8D6286006E209E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441F90B72A8D6286006E209E /* LaunchScreen.storyboard */; };
 		441F90C22A8D6927006E209E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90C12A8D6927006E209E /* Log.swift */; };
 		441F90C42A8D7475006E209E /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90C32A8D7475006E209E /* DateHelper.swift */; };
-		441F90C92A907D1F006E209E /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90C82A907D1F006E209E /* LogController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogDetailViewController.swift; path = LogDetail/LogDetailViewController.swift; sourceTree = "<group>"; };
-		3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiaryTableViewController.swift; path = Controllers/DiaryTableView/DiaryTableViewController.swift; sourceTree = "<group>"; };
-		441F90A92A8D6285006E209E /* TravelGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+	1402EF712A940F8B009EF808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LogDetail.storyboard; sourceTree = "<group>"; };
+		1402EF742A940FD9009EF808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DiaryTableViewStoryboard.storyboard; sourceTree = "<group>"; };
+		1402EF762A94105A009EF808 /* LogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
+		14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
+		3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewController.swift; sourceTree = "<group>"; };
+		441F90A92A8D6285006E209E /* TravelGroup */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TravelGroup; path = TravelGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441F90AC2A8D6285006E209E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441F90AE2A8D6285006E209E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		441F90B32A8D6285006E209E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,7 +36,6 @@
 		441F90BA2A8D6286006E209E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		441F90C12A8D6927006E209E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		441F90C32A8D7475006E209E /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
-		441F90C82A907D1F006E209E /* LogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,19 +52,9 @@
 		14A3EC8D2A8D6BE400E1D12C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				441F90C72A907D0B006E209E /* ModelController */,
-				14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */,
+				1402EF762A94105A009EF808 /* LogController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		14A3EC8E2A8D6BEC00E1D12C /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				441F90B22A8D6285006E209E /* Main.storyboard */,
-				441F90B72A8D6286006E209E /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		14A3EC8F2A8D6BF800E1D12C /* SupportingFiles */ = {
@@ -72,6 +66,33 @@
 				441F90BA2A8D6286006E209E /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		14B96AC82A94174B00DB3C01 /* LogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1402EF702A940F8B009EF808 /* LogDetail.storyboard */,
+				14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */,
+			);
+			path = LogDetail;
+			sourceTree = "<group>";
+		};
+		14B96AC92A94177A00DB3C01 /* Diary TableView */ = {
+			isa = PBXGroup;
+			children = (
+				3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */,
+				1402EF732A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard */,
+			);
+			path = "Diary TableView";
+			sourceTree = "<group>";
+		};
+		14B96ACA2A94179300DB3C01 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				441F90B22A8D6285006E209E /* Main.storyboard */,
+				441F90B72A8D6286006E209E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		441F90A02A8D6285006E209E = {
@@ -86,7 +107,7 @@
 		441F90AA2A8D6285006E209E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				441F90A92A8D6285006E209E /* TravelGroup.app */,
+				441F90A92A8D6285006E209E /* TravelGroup */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,12 +115,12 @@
 		441F90AB2A8D6285006E209E /* TravelGroup */ = {
 			isa = PBXGroup;
 			children = (
-				441F90C32A8D7475006E209E /* DateHelper.swift */,
+				14B96ACA2A94179300DB3C01 /* Storyboard */,
+				14B96AC82A94174B00DB3C01 /* LogDetail */,
+				14B96AC92A94177A00DB3C01 /* Diary TableView */,
 				441F90C02A8D6733006E209E /* Model */,
 				14A3EC8F2A8D6BF800E1D12C /* SupportingFiles */,
-				14A3EC8E2A8D6BEC00E1D12C /* Storyboards */,
 				14A3EC8D2A8D6BE400E1D12C /* Controllers */,
-				3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */,
 			);
 			path = TravelGroup;
 			sourceTree = "<group>";
@@ -107,6 +128,7 @@
 		441F90C02A8D6733006E209E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				441F90C32A8D7475006E209E /* DateHelper.swift */,
 				441F90C12A8D6927006E209E /* Log.swift */,
 			);
 			path = Model;
@@ -117,14 +139,6 @@
 			children = (
 			);
 			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		441F90C72A907D0B006E209E /* ModelController */ = {
-			isa = PBXGroup;
-			children = (
-				441F90C82A907D1F006E209E /* LogController.swift */,
-			);
-			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +158,7 @@
 			);
 			name = TravelGroup;
 			productName = TravelGroup;
-			productReference = 441F90A92A8D6285006E209E /* TravelGroup.app */;
+			productReference = 441F90A92A8D6285006E209E /* TravelGroup */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,9 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1402EF722A940F8B009EF808 /* LogDetail.storyboard in Resources */,
 				441F90B92A8D6286006E209E /* LaunchScreen.storyboard in Resources */,
 				441F90B62A8D6286006E209E /* Assets.xcassets in Resources */,
 				441F90B42A8D6285006E209E /* Main.storyboard in Resources */,
+				1402EF752A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +216,8 @@
 			files = (
 				441F90C42A8D7475006E209E /* DateHelper.swift in Sources */,
 				441F90C22A8D6927006E209E /* Log.swift in Sources */,
-				441F90C92A907D1F006E209E /* LogController.swift in Sources */,
 				441F90AD2A8D6285006E209E /* AppDelegate.swift in Sources */,
+				1402EF772A94105A009EF808 /* LogController.swift in Sources */,
 				14A3EC912A8D6C5D00E1D12C /* LogDetailViewController.swift in Sources */,
 				3A857BF02A8D6A7D00113387 /* DiaryTableViewController.swift in Sources */,
 				441F90AF2A8D6285006E209E /* SceneDelegate.swift in Sources */,
@@ -211,6 +227,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1402EF702A940F8B009EF808 /* LogDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1402EF712A940F8B009EF808 /* Base */,
+			);
+			name = LogDetail.storyboard;
+			sourceTree = "<group>";
+		};
+		1402EF732A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1402EF742A940FD9009EF808 /* Base */,
+			);
+			name = DiaryTableViewStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		441F90B22A8D6285006E209E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
