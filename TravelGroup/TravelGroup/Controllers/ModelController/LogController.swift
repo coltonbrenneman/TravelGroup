@@ -57,7 +57,7 @@ class LogController {
     private var fileURL: URL? {
         guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
         else { return nil }
-        let url = documentsDirectory.appendingPathComponent("logs.json")
+        let url = documentsDirectory.appendingPathComponent("log.json")
         return url
     }
     
