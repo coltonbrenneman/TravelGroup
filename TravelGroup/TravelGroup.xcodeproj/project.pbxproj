@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
-		3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewController.swift; sourceTree = "<group>"; };
+		14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogDetailViewController.swift; path = LogDetail/LogDetailViewController.swift; sourceTree = "<group>"; };
+		3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiaryTableViewController.swift; path = Controllers/DiaryTableView/DiaryTableViewController.swift; sourceTree = "<group>"; };
 		441F90A92A8D6285006E209E /* TravelGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441F90AC2A8D6285006E209E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441F90AE2A8D6285006E209E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
