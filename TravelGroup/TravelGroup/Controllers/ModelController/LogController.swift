@@ -61,15 +61,4 @@ class LogController {
         return url
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   
 } // End of class
