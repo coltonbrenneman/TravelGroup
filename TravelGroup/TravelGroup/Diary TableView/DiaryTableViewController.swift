@@ -11,13 +11,19 @@ class DiaryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }//ViewDidLoad
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tableView.reloadData()
         
-    }
-
+    }//ViewWillAppear
+    
     // MARK: - Table view data source
-
-
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return LogController.shared.logs.count

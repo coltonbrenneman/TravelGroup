@@ -32,10 +32,10 @@ class LogDetailViewController: UIViewController {
                 
         if let log = log {
             // log on line 26 has a value, which means that a user must have selected a cell and sent a log through the segue.
-            LogController.shared.createLog(title: title, address: address, body: body)
+            LogController.shared.update(log: log, title: title, address: address, body: body)
         } else {
             // log on line 26 does NOT have a value, which means the user has tapped on the plus button and is creating a new Diary log!
-            
+            LogController.shared.createLog(title: title, address: address, body: body)
         }
         navigationController?.popViewController(animated: true)
     }// SaveButtonTapped
