@@ -29,5 +29,36 @@ class LogController {
     func delete(log: Log) {
         guard let index = logs.firstIndex(of: log) else { return }
         logs.remove(at: index)
-    } // End of delete
+    } // end of delete
+    
+    // MARK: - Persistence
+    // writing
+    func save() {
+        guard let url = fileURL else {return}
+        do {
+            let data = try JSONEncoder().encode(logs)
+            try data.write(to: url)
+        } catch {
+            print(error)
+        }
+    }
+    
+    func load() {
+        guard let url = fileURL else { return }
+        do {
+            let data = try Data(contentsOf: url)
+            let logs = try JSONDecoder().decode([Log].self, from: data)
+            self.logs = logs
+        } catch {
+            print(error)
+        }
+    }
+    
+    private var fileURL: URL? {
+        guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        else { return nil }
+        let url = documentsDirectory.appendingPathComponent("log.json")
+        return url
+    }
+    
 } // End of class
