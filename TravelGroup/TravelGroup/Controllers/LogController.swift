@@ -13,6 +13,10 @@ class LogController {
     static let shared = LogController()
     var logs: [Log] = []
     
+    init() {
+        load()
+    }
+    
     // MARK: - CRUD
     func createLog(title: String, address: String, body: String) {
        let log = Log(logTitle: title, logAddress: address, logBody: body)
@@ -39,7 +43,7 @@ class LogController {
             let data = try JSONEncoder().encode(logs)
             try data.write(to: url)
         } catch {
-            print(error)
+            print("This save isn't working")
         }
     }
     
@@ -50,14 +54,14 @@ class LogController {
             let logs = try JSONDecoder().decode([Log].self, from: data)
             self.logs = logs
         } catch {
-            print(error)
+            print("Load didn't work")
         }
     }
     
     private var fileURL: URL? {
         guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
         else { return nil }
-        let url = documentsDirectory.appendingPathComponent("log.json")
+        let url = documentsDirectory.appendingPathComponent("logs.json")
         return url
     }
     
