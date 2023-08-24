@@ -13,10 +13,15 @@ class LogController {
     static let shared = LogController()
     var logs: [Log] = []
     
+    init() {
+        load()
+    }
+    
     // MARK: - CRUD
     func createLog(title: String, address: String, body: String) {
        let log = Log(logTitle: title, logAddress: address, logBody: body)
         logs.append(log)
+        save()
     } // End of createLog
     
     func update(log: Log, title: String, address: String, body: String) {
@@ -24,11 +29,13 @@ class LogController {
         log.logAddress = address
         log.logBody = body
         log.logDate = Date()
+        save()
     } // End of update
     
     func delete(log: Log) {
         guard let index = logs.firstIndex(of: log) else { return }
         logs.remove(at: index)
+        save()
     } // end of delete
     
     // MARK: - Persistence
