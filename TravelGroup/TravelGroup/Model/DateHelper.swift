@@ -8,7 +8,7 @@
 import Foundation
 
 extension Date {
-    
+    // Here we are creating a date helper to create a date into a string.
     func asString() -> String {
      let formatter = DateFormatter()
         formatter.dateStyle = .long

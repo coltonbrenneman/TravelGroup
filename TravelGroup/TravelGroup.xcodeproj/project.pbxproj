@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1402EF722A940F8B009EF808 /* LogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1402EF702A940F8B009EF808 /* LogDetail.storyboard */; };
-		1402EF752A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1402EF732A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard */; };
+		1402EF752A940FD9009EF808 /* LogTableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1402EF732A940FD9009EF808 /* LogTableViewStoryboard.storyboard */; };
 		1402EF772A94105A009EF808 /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1402EF762A94105A009EF808 /* LogController.swift */; };
 		14A3EC912A8D6C5D00E1D12C /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */; };
-		3A857BF02A8D6A7D00113387 /* DiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */; };
+		3A857BF02A8D6A7D00113387 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857BEF2A8D6A7D00113387 /* LogTableViewController.swift */; };
 		441F90AD2A8D6285006E209E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90AC2A8D6285006E209E /* AppDelegate.swift */; };
 		441F90AF2A8D6285006E209E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F90AE2A8D6285006E209E /* SceneDelegate.swift */; };
 		441F90B42A8D6285006E209E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441F90B22A8D6285006E209E /* Main.storyboard */; };
@@ -22,11 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-	1402EF712A940F8B009EF808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LogDetail.storyboard; sourceTree = "<group>"; };
-		1402EF742A940FD9009EF808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DiaryTableViewStoryboard.storyboard; sourceTree = "<group>"; };
+		1402EF712A940F8B009EF808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LogDetail.storyboard; sourceTree = "<group>"; };
+		1402EF742A940FD9009EF808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LogTableViewStoryboard.storyboard; sourceTree = "<group>"; };
 		1402EF762A94105A009EF808 /* LogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
 		14A3EC902A8D6C5D00E1D12C /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
-		3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewController.swift; sourceTree = "<group>"; };
+		3A857BEF2A8D6A7D00113387 /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
 		441F90A92A8D6285006E209E /* TravelGroup */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TravelGroup; path = TravelGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441F90AC2A8D6285006E209E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441F90AE2A8D6285006E209E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,13 +77,13 @@
 			path = LogDetail;
 			sourceTree = "<group>";
 		};
-		14B96AC92A94177A00DB3C01 /* Diary TableView */ = {
+		14B96AC92A94177A00DB3C01 /* LogTableView */ = {
 			isa = PBXGroup;
 			children = (
-				3A857BEF2A8D6A7D00113387 /* DiaryTableViewController.swift */,
-				1402EF732A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard */,
+				3A857BEF2A8D6A7D00113387 /* LogTableViewController.swift */,
+				1402EF732A940FD9009EF808 /* LogTableViewStoryboard.storyboard */,
 			);
-			path = "Diary TableView";
+			path = LogTableView;
 			sourceTree = "<group>";
 		};
 		14B96ACA2A94179300DB3C01 /* Storyboard */ = {
@@ -117,7 +117,7 @@
 			children = (
 				14B96ACA2A94179300DB3C01 /* Storyboard */,
 				14B96AC82A94174B00DB3C01 /* LogDetail */,
-				14B96AC92A94177A00DB3C01 /* Diary TableView */,
+				14B96AC92A94177A00DB3C01 /* LogTableView */,
 				441F90C02A8D6733006E209E /* Model */,
 				14A3EC8F2A8D6BF800E1D12C /* SupportingFiles */,
 				14A3EC8D2A8D6BE400E1D12C /* Controllers */,
@@ -203,7 +203,7 @@
 				441F90B92A8D6286006E209E /* LaunchScreen.storyboard in Resources */,
 				441F90B62A8D6286006E209E /* Assets.xcassets in Resources */,
 				441F90B42A8D6285006E209E /* Main.storyboard in Resources */,
-				1402EF752A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard in Resources */,
+				1402EF752A940FD9009EF808 /* LogTableViewStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +219,7 @@
 				441F90AD2A8D6285006E209E /* AppDelegate.swift in Sources */,
 				1402EF772A94105A009EF808 /* LogController.swift in Sources */,
 				14A3EC912A8D6C5D00E1D12C /* LogDetailViewController.swift in Sources */,
-				3A857BF02A8D6A7D00113387 /* DiaryTableViewController.swift in Sources */,
+				3A857BF02A8D6A7D00113387 /* LogTableViewController.swift in Sources */,
 				441F90AF2A8D6285006E209E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,12 +235,12 @@
 			name = LogDetail.storyboard;
 			sourceTree = "<group>";
 		};
-		1402EF732A940FD9009EF808 /* DiaryTableViewStoryboard.storyboard */ = {
+		1402EF732A940FD9009EF808 /* LogTableViewStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1402EF742A940FD9009EF808 /* Base */,
 			);
-			name = DiaryTableViewStoryboard.storyboard;
+			name = LogTableViewStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		441F90B22A8D6285006E209E /* Main.storyboard */ = {
