@@ -11,7 +11,7 @@ class DiaryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+     
     }//ViewDidLoad
     
     override func viewWillAppear(_ animated: Bool) {

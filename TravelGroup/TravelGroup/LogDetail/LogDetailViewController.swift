@@ -19,6 +19,7 @@ class LogDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let logs = loadLogs()
         updateUI()
     }
     // MARK: - Properties
@@ -50,6 +51,28 @@ class LogDetailViewController: UIViewController {
         logBodyTextView.text = log.logBody
         
     }// UpdateUI
-
-    
+    func saveLogs(_ logs: [Log]) {
+        do {
+            let encoder = JSONEncoder()
+            let encodedLogs = try encoder.encode(logs)
+            UserDefaults.standard.set(encodedLogs, forKey: "logs")
+        } catch {
+            print("Error encoding and saving logs: \(error)")
+        }
+    }
+    func loadLogs() -> [Log] {
+        guard let encodedLogs = UserDefaults.standard.data(forKey: "logs") else {
+            return []
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            let logs = try decoder.decode([Log].self, from: encodedLogs)
+            return logs
+        } catch {
+            print("Error decoding and loading logs: \(error)")
+            return []
+        }
+    }
 }// End of Class
+
