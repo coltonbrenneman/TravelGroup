@@ -31,7 +31,8 @@ class LogTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "brianaIsAmazing", for: indexPath) // This identifer is for the cell.
+        let cell = tableView.dequeueReusableCell(withIdentifier: "brianaIsAmazing", for: indexPath) 
+        // This identifer is for the cell.
         // This is configuring the information in the cell on the tableview. The information is created in the cell then displayed on the tableview.
         let log = LogController.shared.logs[indexPath.row]
         var config = cell.defaultContentConfiguration()
@@ -43,7 +44,7 @@ class LogTableViewController: UITableViewController {
     }
 // Using this function to delete the cell on the tableview.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete { // creating a constant named log and assigning the value adding that log into the delete.
+        if editingStyle == .delete { // creating a constant named log and assigning the value adding that log to delete.
             let log = LogController.shared.logs[indexPath.row]
             LogController.shared.delete(log: log)
             tableView.deleteRows(at: [indexPath], with: .fade) // deleting the indexPath of that log.
@@ -55,7 +56,7 @@ class LogTableViewController: UITableViewController {
         // the segue is what connects two storyboards together, we are giving an identifer of toDetailVC
         if segue.identifier == "toDetailVC" {
             if let indexPath = tableView.indexPathForSelectedRow { // if indexpath = for that selected row
-                if let destination = segue.destination as? LogDetailViewController { // let the destination be the LogDetailController that is our detail scree.
+                if let destination = segue.destination as? LogDetailViewController { // let the destination be the LogDetailController that is our detail screen.
                     let log = LogController.shared.logs[indexPath.row]
                     destination.log = log // destination log
                 }

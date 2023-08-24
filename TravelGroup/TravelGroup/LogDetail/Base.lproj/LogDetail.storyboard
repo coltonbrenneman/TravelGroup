@@ -11,7 +11,7 @@
         <!--Log Detail View Controller-->
         <scene sceneID="SKQ-nz-8g9">
             <objects>
-                <viewController id="9If-la-idp" customClass="LogDetailViewController" customModule="TravelGroup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9If-la-idp" customClass="LogDetailViewController" customModule="TravelGroup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAh-dw-M7U">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
